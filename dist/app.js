@@ -145,6 +145,7 @@ function openDeleteConfirm(notes) {
     confirmDeleteBtn.addEventListener("click", () => {
         deleteConfirmModal.style.display = "none";
         deleteNote(notes.id);
+        noteEditor.style.display = "none";
     });
     confirmCancelBtn.addEventListener("click", () => { deleteConfirmModal.style.display = "none"; });
     confirmCloseBtn.addEventListener("click", () => { deleteConfirmModal.style.display = "none"; });
