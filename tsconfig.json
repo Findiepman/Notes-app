@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2015", // voor Array.find en andere ES6 features
+    "lib": [
+      "ES2015",
+      "DOM"
+    ], // array methods + DOM types
+    "module": "ES6", // moderne browser modules
+    "rootDir": "./src", // TS-bestanden bron
+    "outDir": "./dist", // JS-output
+    "strict": true, // strikte typechecking
+    "esModuleInterop": true, // compatibiliteit import/export
+    "forceConsistentCasingInFileNames": true,
+    // Handige extra opties
+    "sourceMap": true, // debugging
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    // Belangrijk voor browser modules
+    "moduleResolution": "node" // lost problemen met import paths op
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
