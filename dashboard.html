@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Notes</title>
+    <link rel="stylesheet" href="styles/notes-dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/flavicon.png">
+</head>
+
+<body>
+
+    <div class="app-wrapper">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1 class="logo">Notes</h1>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active">
+                    <span class="nav-icon">📝</span>
+                    <span class="nav-text">All Notes</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">⭐</span>
+                    <span class="nav-text">Favorites</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">🗑️</span>
+                    <span class="nav-text">Trash</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button id="btn-new-note" class="btn-new-note">+ New Note</button>
+            </div>
+        </aside>
+
+        <!-- Notes List -->
+        <div class="notes-list">
+            <div class="list-header">
+                <h2>All Notes</h2>
+            </div>
+
+            <div class="notes-grid">
+
+
+
+            </div>
+        </div>
+
+        <!-- Note Editor -->
+        <div id="note-editor" class="note-editor">
+            <div class="editor-header">
+                <input type="text" class="note-title-input" id="note-title-input" placeholder="Note title..." />
+                <button class="btn-delete">🗑️</button>
+            </div>
+
+            <textarea class="editor-content" id="editor-content" placeholder="Start writing..."></textarea>
+
+            <div class="editor-footer">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Create Note Modal -->
+    <div id="create-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>New Note</h3>
+                <button id="close-modal" class="btn-close">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="note-title">Title</label>
+                    <input type="text" id="note-title" placeholder="Untitled" />
+                </div>
+                <div class="form-group">
+                    <label for="note-content">Content</label>
+                    <textarea id="note-content" rows="6" placeholder="Start writing..."></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="cancel-btn" class="btn-cancel">Cancel</button>
+                <button id="create-btn" class="btn-create">Create Note</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Confirmation Modal -->
+    <div id="delete-modal" class="modal">
+        <div class="modal-content modal-small">
+            <div class="modal-header">
+                <h3>Delete Note?</h3>
+                <button id="close-delete-modal" class="btn-close">×</button>
+            </div>
+            <div class="modal-body">
+                <p class="delete-warning">This note will be permanently deleted. This action cannot be undone.</p>
+            </div>
+            <div class="modal-footer">
+                <button id="cancel-delete-btn" class="btn-cancel">Cancel</button>
+                <button id="confirm-delete-btn" class="btn-delete-confirm">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./dist/app.js" defer></script>
+</body>
+
+</html>
