@@ -21,24 +21,24 @@ Search Notes – Filter notes by title (coming soon).
 
 
 
-#Installation
+# Installation
 
 Clone the repository:
 
 git clone https://github.com/FinDiepman/notes-app.git
 
 
-#Navigate to the project folder:
+# Navigate to the project folder:
 
 cd notes-app
 
 
-#Install dependencies (if using a bundler or TypeScript compiler):
+# Install dependencies (if using a bundler or TypeScript compiler):
 
 npm install
 
 
-#Compile TypeScript:
+# Compile TypeScript:
 
 tsc
 
@@ -47,7 +47,7 @@ Open index.html in your browser or serve with a local server:
 
 npx live-server
 
-#Usage
+# Usage
 
 Click "+ New Note" to create a new note.
 
@@ -59,7 +59,7 @@ If both the title and content are empty, the note will be deleted after 10 secon
 
 Click outside the note editor (in the empty notes list) to close the editor.
 
-#File Structure
+# File Structure
 notes-app/
 ├─ src/          # TypeScript source files
 ├─ dist/         # Compiled JavaScript
@@ -68,7 +68,7 @@ notes-app/
 ├─ index.html    # Main HTML page
 └─ README.md     # This file
 
-#Technologies
+# Technologies
 
 TypeScript – Strong typing for safer JavaScript
 
@@ -76,11 +76,11 @@ HTML5 & CSS3 – Modern layout and responsive design
 
 DOM API – Dynamic note rendering and events
 
-#Contributing
+# Contributing
 
 Contributions are welcome!
 Please fork the repository, create a branch, and submit a pull request.
 
-#License
+# License
 
 This project is licensed under the MIT License.
